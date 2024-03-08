@@ -1,0 +1,71 @@
+<head>
+    <title>
+        Sassy Saharsh
+    </title>
+    <script src="ss.js"></script>
+    <style>
+        .boi{
+            background-color: cornflowerblue;
+        }
+        button{
+            color: darkslategrey;
+            text-align: center;
+            text-emphasis-color: white;
+        }
+        p{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <p>This is the official code for Sassy Saharsh Python Program</p>
+        <p>Use it Wisely</p>
+        <p>By~ Orgasmic Potato</p>
+        <div class="boi">
+        <pre id="code">
+import turtle
+turtle.Screen().bgcolor("light pink")
+turtle.left(90)
+def draw_heart(x, y, size, color):
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.color(color)
+    turtle.left(50)
+    turtle.forward(size)
+    for _ in range(200):
+        turtle.right(1)
+        turtle.forward(size/111.111111111)
+    turtle.left(120)
+    for _ in range(200):
+        turtle.right(1)
+        turtle.forward(size/111.111111111)
+    turtle.forward(size)
+    turtle.end_fill()
+    turtle.right(130)
+
+
+def draw_text(x, y, text, size):
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.color("white")
+    turtle.write(text, align="center", font=("Arial", size, "bold"))
+
+turtle.speed(0)
+
+draw_heart(0, -200, 300, "purple")
+draw_heart(0, -150, 200, "red")
+draw_heart(0, -100, 100, "pink")
+
+draw_text(0, -10, "Sassy Saharsh", 16)
+
+turtle.done()
+
+          </pre>
+          </div>
+          <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+    </center>
+</body>
