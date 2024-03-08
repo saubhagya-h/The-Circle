@@ -1,3 +1,16 @@
 body{
     background-color: burlywood;
 }
+hr {
+    border: none; /* Remove default border */
+    height: 1px; /* Set the height of the line */
+    background-color: black; /* Set the color of the line 
+    https://xxxshake.com/tags/punishment/ */
+    margin: 20px 0; /* Add some margin for spacing */
+    width: 100%; /* Default width to span the entire width */
+}
+
+p{
+    font-size: 20;
+    color: black;
+}
